@@ -1,0 +1,368 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links li a {
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    background-color: #575757;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1500; /* Asegura que el botón esté por encima del contenido */
+    margin-right: 20px; /* Añade espacio entre el botón y el resto del contenido */
+    color: white; /* Color blanco para el icono del botón */
+}
+
+.toggle-button span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.toggle-button.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.toggle-button.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle-button.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-links.mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 60px; /* Ajusta según sea necesario para evitar solapamiento con el contenido */
+    width: 100%;
+    z-index: 1400; /* Asegura que el menú desplegable esté por encima del contenido */
+}
+
+.navbar-links.mobile.show {
+    display: flex;
+}
+
+.navbar-links.mobile li a {
+    padding: 10px 20px;
+    text-align: center;
+    color: white; /* Color blanco para el texto del menú móvil */
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Alinea los ítems del menú a la derecha */
+        position: absolute;
+        top: 60px; /* Ajusta según sea necesario */
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+        width: 100%;
+        z-index: 1300; /* Asegura que el menú desplegable esté por encima del contenido */
+        transform: translateX(100%); /* Mueve el menú fuera de la vista inicialmente */
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-links.open {
+        transform: translateX(0); /* Muestra el menú al hacer clic en el botón */
+    }
+
+    .navbar-links li a {
+        color: white; /* Asegura que el texto del menú sea blanco en dispositivos móviles */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pie de Página */
+/* Estilos del pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    clear: both;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .image-box {
+    margin-bottom: 10px;
+}
+
+.footer .image-box a {
+    margin: 0 10px;
+}
+
+.footer .email-section {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+/* Estilos del pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    clear: both;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .image-box {
+    margin-bottom: 10px;
+}
+
+.footer .image-box a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .image-box a img {
+    width: 80px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+}
+
+.footer .email-section {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Añadido para separación lateral en contenedor */
+}
+
+/* Sección con imagen que abarca todo el ancho */
+.full-width-image {
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.full-width-image img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura según el ancho */
+    max-width: 100%; /* No excede su tamaño natural */
+    display: block; /* Para evitar el espacio adicional debajo de la imagen */
+}
+
+.image-caption {
+    position: relative; /* Para posicionar el texto sobre la imagen */
+    top: -50%; /* Ajusta la posición verticalmente */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    padding: 20px;
+    color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box; /* El padding se incluye en el ancho */
+}
+
+.image-caption h2, .image-caption p {
+    margin: 0;
+}
+
+/* Sección de Servicios */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-item {
+    margin: 30px 0;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.service-item p {
+    font-size: 1.2rem;
+    color: #666;
+}
