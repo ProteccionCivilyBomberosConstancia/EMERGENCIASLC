@@ -8,8 +8,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #000000;
     z-index: 1000;
+    opacity: 90%;
 }
 
 .navbar .container {
@@ -47,7 +48,7 @@ body {
 }
 
 .navbar-links li a:hover {
-    background-color: #575757;
+    background-color: #282828;
 }
 
 .toggle-button {
@@ -123,7 +124,7 @@ body {
         position: absolute;
         top: 60px; /* Ajusta según sea necesario */
         right: 0;
-        background-color: #333;
+        background-color: #454545;
         padding: 10px;
         width: 100%;
         z-index: 1300; /* Asegura que el menú desplegable esté por encima del contenido */
@@ -195,7 +196,8 @@ body {
 
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #333;
+    background-color: #000000;
+    opacity: 90%;
     color: #fff;
     padding: 10px 0;
     position: fixed;
@@ -234,7 +236,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #ff9800;
+    color: #ffffff;
 }
 
 /* Estilos para secciones */
